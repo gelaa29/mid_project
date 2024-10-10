@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Gallery</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Midterm Project</h1>
+        <p class="subtitle">Secure Web and Cloud Computing</p>
+    </header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="navbar-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contacts</a>
+            <button id="logout-button" onclick="confirmLogout()">Logout</button>
+        </div>
+    </nav>
+
+
+<div class="content-wrapper">
+    <div class="t1"><h1>Contact Us</h1></div>
+    <div class="content">
+        <div class="container">
+            <img src="img/user.png" alt="Developer 1" class="profile-image">
+            <div class="profile-details">
+                <h2>Angela </h2>
+                <p>Angela is a passionate web developer with expertise in frontend development. She loves creating user-friendly and visually appealing websites.</p>
+                <div class="contact-icons">
+                    <a href="mailto:angelaboniol2@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+09569578122" class="icon"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.instagram.com/angelaboniol/" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/angelaboniol/" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/angelaboniol/" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/user.png" alt="Developer 2" class="profile-image">
+            <div class="profile-details">
+                <h2>Michael </h2>
+                <p>Michael is a skilled frontend developer with a keen eye for design and a knack for creating responsive layouts. He is dedicated to crafting seamless user experiences.</p>
+                <div class="contact-icons">
+                    <a href="mailto:michaellopez@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+09152967645" class="icon"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.instagram.com/michaellopez/" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/michaellopez/" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/michaellopez/" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>    
+        <div class="container">
+            <img src="img/user.png" alt="Developer 2" class="profile-image">
+            <div class="profile-details">
+                <h2>Angelo </h2>
+                <p>Angelo is a skilled frontend developer with a keen eye for design and a knack for creating responsive layouts. He is dedicated to crafting seamless user experiences.</p>
+                <div class="contact-icons">
+                    <a href="mailto:angelobalala@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+09152967645" class="icon"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.instagram.com/angelobalala/" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/angelobalala/" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/angelobalala/" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>   
+        <div class="container">
+            <img src="img/user.png" alt="Developer 2" class="profile-image">
+            <div class="profile-details">
+                <h2>Kylha</h2>
+                <p>Kylha is an expert frontend developer with a strong sense of design and a talent for building responsive layouts. He is committed to delivering seamless user experiences and excels at creating intuitive and engaging interfaces.</p>
+                <div class="contact-icons">
+                    <a href="mailto:angelobalala@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+09152967645" class="icon"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.instagram.com/angelobalala/" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/angelobalala/" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/angelobalala/" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+
+
+<script>
+    function confirmLogout() {
+    const logoutConfirmation = confirm('Are you sure you want to logout?');
+    if (logoutConfirmation) {
+        logout();
+    }
+}
+    function logout() {
+    loggedIn = false;
+    window.location.href = 'index.html';
+}
+</script>
+    
+<footer class="footer">
+    <p>Submitted to: Mr. Carlben Bea</p>
+    <p class="instructor">IT Instructor</p>
+</footer>
+</body>
+</html>

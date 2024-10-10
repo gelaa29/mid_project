@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap">
+<title>Login Form</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">Midterm Project</h1>
+        <p class="subtitle">Secure Web and Cloud Computing</p>
+    </header>
+
+    <h1 id="winter-gallery-title">Winter Gallery</h1>
+
+    <div class="content">
+<div id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+</div>
+</div>
+
+<footer class="footer">
+    <p>Submitted to: Mr. Carlben Bea</p>
+    <p class="instructor">IT Instructor</p>
+</footer>
+
+
+<script>
+    let loggedIn = false;
+
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Simulate login logic (checking against hardcoded credentials)
+        if (username === 'user' && password === 'pass') {
+            loggedIn = true;
+            alert('Login successful!');
+            redirectToPage();
+        } else {
+            alert('Invalid username or password. Please try again.');
+        }
+    }
+
+    function redirectToPage() {
+        if (loggedIn) {
+            window.location.href = 'home.html';
+        }
+    }
+
+</script>
+
+</body>
+</html>
