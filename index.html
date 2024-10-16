@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="login.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap">
-<title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Gallery</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap">
+
+
 
 </head>
 <body>
-
     <header class="header">
         <h1 class="title">Midterm Project</h1>
         <p class="subtitle">Secure Web and Cloud Computing</p>
     </header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="navbar-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contacts</a>
+            <button id="logout-button" onclick="confirmLogout()">Logout</button>
+        </div>
+    </nav>
 
-    <h1 id="winter-gallery-title">Winter Gallery</h1>
 
     <div class="content">
-<div id="login-form">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Login</button>
+        <div class="transparent-container">
+            <h2 class="container-title">WINTER GALLERY<br><br>"Something about how cold it is."<h2>
+            <a href="gallery.html" class="container-button">witness cold places</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Submitted to: Mr. Carlben Bea</p>
+        <p class="instructor">IT Instructor</p>
+    </footer>
 
-</div>
-</div>
-
-<footer class="footer">
-    <p>Submitted to: Mr. Carlben Bea</p>
-    <p class="instructor">IT Instructor</p>
-</footer>
-
-
-<script>
-    let loggedIn = false;
-
-    function login() {
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        // Simulate login logic (checking against hardcoded credentials)
-        if (username === 'user' && password === 'pass') {
-            loggedIn = true;
-            alert('Login successful!');
-            redirectToPage();
-        } else {
-            alert('Invalid username or password. Please try again.');
+    <script>
+        function confirmLogout() {
+        const logoutConfirmation = confirm('Are you sure you want to logout?');
+        if (logoutConfirmation) {
+            logout();
         }
     }
-
-    function redirectToPage() {
-        if (loggedIn) {
-            window.location.href = 'home.html';
-        }
+        function logout() {
+        loggedIn = false;
+        window.location.href = 'index.html';
     }
-
-</script>
-
+    </script>
 </body>
 </html>
