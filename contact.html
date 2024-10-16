@@ -27,7 +27,6 @@
             <a href="home.html" class="nav-link">Home</a>
             <a href="gallery.html" class="nav-link">Gallery</a>
             <a href="contact.html" class="nav-link">Contacts</a>
-            <button id="logout-button" onclick="confirmLogout()">Logout</button>
         </div>
     </nav>
 
@@ -95,18 +94,6 @@
 </div>
 
 
-<script>
-    function confirmLogout() {
-    const logoutConfirmation = confirm('Are you sure you want to logout?');
-    if (logoutConfirmation) {
-        logout();
-    }
-}
-    function logout() {
-    loggedIn = false;
-    window.location.href = 'index.html';
-}
-</script>
     
 <footer class="footer">
     <p>Submitted to: Mr. Carlben Bea</p>
